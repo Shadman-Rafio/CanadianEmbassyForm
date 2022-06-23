@@ -1,0 +1,20 @@
+﻿
+@using Microsoft.AspNetCore.Identity
+@using CanadianEmbassyForm.Areas.Identity.Data
+@model FormField
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    
+    <form action="" method="post">
+        <input type="text" asp-for="Name" placeholder="Enter Your Name" /> <br /> <br />
+        <input type="email" asp-for="Email" placeholder="Enter Your Email" /> <br /> <br />
+        <input type="text" asp-for="Age" placeholder="Enter Your Age" /> <br /> <br />
+        <input type="date" asp-for="DOB" /> <br /> <br />
+
+        <input type="submit" value="Submit" />
+    </form>
+</div>
